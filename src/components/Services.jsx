@@ -40,40 +40,42 @@ const Services = () => {
         }
     ]
     return (
-        <div className="container mx-auto px-5 py-24 ">
-            <div className="header flex items-end justify-between mb-12">
-                <div className="title">
-                    <div className="text-4xl font-bold text-gray-800 mb-4">
-                        Quality Services
-                        <div className="h-1 w-40 bg-indigo-500 rounded"></div>
+        <section className="text-gray-600 body-font bg-gray-100">
+            <div className="max-w-7xl sm:px-6 container mx-auto px-5 py-24 ">
+                <div className="header flex items-end justify-between mb-12">
+                    <div className="title">
+                        <div className="text-4xl font-bold text-gray-800 mb-4">
+                            Quality Services
+                            <div className="h-1 w-40 bg-indigo-500 rounded"></div>
+                        </div>
+                        <p className="text-2xl font-light text-gray-400">
+                            All article are verified by 2 experts and valdiate by the CTO
+                        </p>
                     </div>
-                    <p className="text-2xl font-light text-gray-400">
-                        All article are verified by 2 experts and valdiate by the CTO
-                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+                    {services.map((service, idx) => (<div key={idx} className="overflow-hidden shadow-lg rounded-lg h-90 gap-5 cursor-pointer m-auto">
+                        <a href="#/" className="w-full block h-full">
+                            <img alt="services" src={service.img} className="max-h-80 w-full object-cover" />
+                        </a>
+                        <div className="bg-white dark:bg-gray-800 w-full p-5">
+                            <a href="#/" className="w-full block h-full">
+                                <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    {service.title}
+                                </p>
+                                <p className="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    {service.desc.slice(0, 90)}...
+                                </p>
+                            </a>
+                            <div className="flex items-center mt-4">
+                                <a className='bg-blue-500 text-white p-2 px-4 rounded' href='services'>View More</a>
+                            </div>
+                        </div>
+                    </div>))}
+
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-                {services.map((service, idx) => (<div key={idx} className="overflow-hidden shadow-lg rounded-lg h-90 gap-5 cursor-pointer m-auto">
-                    <a href="#/" className="w-full block h-full">
-                        <img alt="photo services" src={service.img} className="max-h-80 w-full object-cover" />
-                    </a>
-                    <div className="bg-white dark:bg-gray-800 w-full p-5">
-                        <a href="#" className="w-full block h-full">
-                            <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
-                                {service.title}
-                            </p>
-                            <p className="text-gray-400 dark:text-gray-300 font-light text-md">
-                                {service.desc.slice(0, 90)}...
-                            </p>
-                        </a>
-                        <div className="flex items-center mt-4">
-                            <a className='bg-blue-500 text-white p-2 px-4 rounded' href='services'>View More</a>
-                        </div>
-                    </div>
-                </div>))}
-
-            </div>
-        </div>
+        </section>
     )
 }
 
