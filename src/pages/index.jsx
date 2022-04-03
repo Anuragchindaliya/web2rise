@@ -1,0 +1,10 @@
+// export { default as Home } from "./Home"
+// export { default as About } from "./About"
+// export { default as Project } from "./Project"
+// export { default as Career } from "./Career"
+// // export { default as Service } from "./service"
+// import Home from "./Home"
+// import HAome from "./Home"
+// import Home from "./Home"
+// import Home from "./Home"
+

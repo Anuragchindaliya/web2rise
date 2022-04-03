@@ -40,7 +40,7 @@ const Testimonial = () => {
                                         everyone.Amazing
                                         Organisaton.Extremely Talented.
                                         <div className="flex items-left justify-left p-5">
-                                            <img src="http://web2rise.q2w.in:100/web2rise/wp-content/uploads/2022/02/review-1.png" className="rounded-full h-24 w-24 flex itmes-left justify-left border-blue-500 border-2 " alt="author" />
+                                            <img src="./assets/review/review-1.png" className="rounded-full h-24 w-24 flex itmes-left justify-left border-blue-500 border-2 " alt="author" />
                                             <div className="inline text-lg leading-8 uppercase text-gray-700 items-center justify-center pl-6 pt-8 font-black ">
                                                 Neeraj Maurya</div>
                                         </div>

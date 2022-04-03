@@ -1,13 +1,13 @@
 import React from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import SliderCom from '../components/SliderCom'
-import Testimonial from '../components/Testimonial'
+// import Testimonial from '../components/Testimonial'
 
 
 const About = () => {
     return (
         <>
-            <Breadcrumb />
+            <Breadcrumb title="About us" />
             {/* <Testimonial /> */}
             <SliderCom />
         </>
